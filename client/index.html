@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<!--
+      ___           ___           ___       ___           ___           ___           ___     
+     /\  \         /\  \         /\__\     /\  \         |\__\         /\__\         /\  \    
+    /::\  \       /::\  \       /:/  /    /::\  \        |:|  |       /:/  /        /::\  \   
+   /:/\:\  \     /:/\:\  \     /:/  /    /:/\:\  \       |:|  |      /:/  /        /:/\ \  \  
+  /:/  \:\  \   /::\~\:\  \   /:/  /    /::\~\:\  \      |:|__|__   /:/  /  ___   _\:\~\ \  \ 
+ /:/__/_\:\__\ /:/\:\ \:\__\ /:/__/    /:/\:\ \:\__\ ____/::::\__\ /:/__/  /\__\ /\ \:\ \ \__\
+ \:\  /\ \/__/ \/__\:\/:/  / \:\  \    \/__\:\/:/  / \::::/~~/~    \:\  \ /:/  / \:\ \:\ \/__/
+  \:\ \:\__\        \::/  /   \:\  \        \::/  /   ~~|:|~~|      \:\  /:/  /   \:\ \:\__\  
+   \:\/:/  /        /:/  /     \:\  \       /:/  /      |:|  |       \:\/:/  /     \:\/:/  /  
+    \::/  /        /:/  /       \:\__\     /:/  /       |:|  |        \::/  /       \::/  /   
+     \/__/         \/__/         \/__/     \/__/         \|__|         \/__/         \/__/                    /                                   
+--> 
+
+
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="/client/style/style.css?v=7">
+		<link rel="icon" href="/client/img/favicon/favicon.ico" type="image/x-icon" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+		<script src="/client/js/jquery.js"></script>
+		<script src="/client/js/typeWriter.js"></script>
+
+		<title>Galaxus.io</title>
+	</head>
+
+	<body style="">
+
+		<div id="allHold" style="position:relative; background-image:url('/client/img/zig.png'); background-repeat:repeat;">
+
+			<div id="gameEndScreen">
+				<div id="gameEndHold"> 
+					<div style="margin-top:10px; margin-bottom:30px;">
+						<img src="/client/img/betterluck.png" style="width:400px;" />
+					</div>
+					<div>
+						<button id="blueb" style="padding:12px 60px; font-size:40px; cursor:pointer;" onclick="res();">Respawn</button>
+					</div>
+					<div style="margin-top:20px;">
+						<button id="blueb" style="background-color:#999; cursor:pointer; font-size:18px;" onclick="window.location='/'">Title Screen</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="front_effect" style="display:none; width:100%; height:100%; position:absolute; font-size:40px; color:#fff; z-index:10000000;">
+			</div>
+
+			<div id="front_effect_two" style="display:none; background-color:#fff; width:100%; height:100%; position:absolute; font-size:40px; color:#fff; z-index:10000000;">
+			</div>
+
+			<div id="canvi" style=" position:relative; margin-left:auto; margin-right:auto; ">
+				<div style="position:absolute; width:100%;">
+
+
+					<div id="glogo">
+						<img style="width:560px; margin-top:60px; margin-bottom:40px;" src="/client/img/gtest4.png" />
+					</div>
+
+					<div id="sign_div">
+
+						<div>
+							<div>
+								Username 
+							</div>
+							<div>
+								<input id="signDiv-username" name="username" maxlength="20" value="" type="text"></input>
+							</div>
+						</div>
+
+						<div>
+							<div style="margin-top:20px;">
+								Select a color
+							</div> 
+
+							<input type="" id="signDiv-color" style="display:none;" /> 
+
+							<table style="margin-left:70px;" class="cSel">
+								<tr>
+									<td class="cSelOne">
+										<a href="javascript:void(0);" class="sOne" onclick="selColor('#fffa47');">
+											<div style="background-color:#fffa47;" class="colorSel"></div>
+										</a>
+									</td>
+									<td class="cSelTwo">
+										<a href="javascript:void(0);" class="sTwo" onclick="selColor('#69a2f6');">
+											<div style="background-color:#69a2f6;" class="colorSel"></div>
+										</a>
+									</td>
+									<td class="cSelThree">
+										<a href="javascript:void(0);" class="sThree" onclick="selColor('#57ff45');">
+											<div style="background-color:#57ff45;" class="colorSel"></div>
+										</a>
+									</td>
+									<td class="cSelFour">
+										<a href="javascript:void(0);" class="sFour" onclick="selColor('#d545ff');">
+											<div style="background-color:#d545ff;" class="colorSel"></div>
+										</a>
+									</td>
+									<td class="cSelFive">
+										<a href="javascript:void(0);" class="sFive" onclick="selColor('#ee0557');">
+											<div style="background-color:#ee0557;" class="colorSel"></div>
+										</a>
+									</td>
+
+									<td class="cSelSix">
+										<a href="javascript:void(0);" class="sSix" onclick="selColor('#ff9600');">
+											<div style="background-color:#ff9600;" class="colorSel"></div>
+										</a>
+									</td>
+
+									<td class="cSelSeven">
+										<a href="javascript:void(0);" class="sSeven" onclick="selColor('#05eeeb');">
+											<div style="background-color:#05eeeb;" class="colorSel"></div>
+										</a>
+									</td>
+
+								</tr>
+							</table>
+
+													<div style="margin-top:20px;">
+							<button style="display:none;" id="signDiv-signUp">Sign Up</button> 
+							<button id="signDiv-signIn">Play Now</button>
+						</div>
+
+
+
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+				<div id="gameHold" style="margin-left:auto; margin-right:auto;">
+
+					<canvas id="ctx-intro" width="1200" height="800"></canvas>
+
+					<canvas id="ctx-menu" width="426" height="110" style="display:none; position:absolute; right:0px; left:0px; bottom:12px; background-color:#000"></canvas>
+
+					<canvas id="ctx-score" width="205" height="35" style="display:none; position:absolute; left:0px; right:0px; bottom:122px;" ></canvas>
+
+					<canvas id="ctx-leader" width="190" height="250" style="display:none; position:absolute; right:10px; top:15px;" ></canvas>
+
+					<canvas id="ctx" style="width:100%; height:100%; display:none; background-color:#fff;" ></canvas> 
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
+
+
+<script src="/client/js/socket.js"></script>
+
+<script src="/client/js/config.js"></script>
+
+<script src="/client/js/account.js"></script>
+
+<script src="/client/js/main.js"></script>
+
+<script src="/client/js/util.js"></script>
+

@@ -1,0 +1,144 @@
+canvas, img { 
+	display:block; 
+	margin:0em auto;  
+}
+
+canvas #ctx{ 
+	background-size:cover; 
+}
+
+canvas{
+}
+
+html{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family:'Open Sans';
+}
+
+#ctx{
+
+}
+
+#ctx-fx{ 
+	display:none;
+}
+
+#gameEndScreen{
+	position:absolute; 
+	text-align:center; 
+	width:100%; 
+	height:100%;  
+	background-color:rgba(0,0,0,.3);
+	display:none;
+	z-index:100000000000;
+}
+
+#dzone{
+	display:none; 
+	position:absolute; 
+	width:695px; 
+	height:250px; 
+}
+
+#intro{
+	position:absolute;
+	top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0px;
+}
+
+body{
+   background-size:cover; 
+   background-repeat:no-repeat
+}
+
+#sign_div{
+	width:540px;  
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top:10px;
+	background-color:rgba(255,255,255,0.5);
+	color:#000;
+	border:3px #ccc solid;
+	font-size:26px;
+	text-align:center;
+	padding:20px 10px;
+	border-radius:5px;
+
+}
+
+.cSel td{
+	border-radius:3px;
+	border:2px #fff solid;
+	background-color:#ccc;
+}
+
+
+.colorSel{
+	float:left; 
+	height:40px; 
+	border-radius:20px; 
+	width:40px; 
+	/* border:2px #fffa47 solid; */ 
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#glogo{
+	margin-left:auto; 
+	margin-right:auto; 
+	position:relative;
+	margin-top:10px;
+}
+
+#blueb{
+	font-size:22px;
+	padding:10px 50px;
+	background-color:#1074e4;
+	border:2px #3180d9 solid;
+	color:#fff;
+	border-radius:6px;
+	margin-top:10px;
+}
+
+#sign_div input[type='text']{
+	font-size:30px;
+	padding:2px 5px;
+}
+
+#sign_div button{
+	font-size:38px;
+	font-weight:bold;
+	padding:10px 70px;
+	background-color:#1074e4;
+	background: linear-gradient(#67aaf4, #023c7d);
+	border:2px #3180d9 solid;
+	cursor:pointer;
+	color:#fff;
+	border-radius:6px;
+	margin-top:10px;
+}
+
+#gameEndHold{
+	margin-top:50px; 
+	border-radius:8px; 
+	background-color:rgba( 40 , 40 , 40 , .6); 
+	width:800px; 
+	padding-top:30px; 
+	padding-bottom:40px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
